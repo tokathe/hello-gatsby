@@ -9,7 +9,7 @@ import {
   siteTitle
 } from "./layout.module.css";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout: React.FC<{pageTitle: string}> = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
       site(siteMetadata: {}) {
@@ -19,8 +19,6 @@ const Layout = ({ pageTitle, children }) => {
       }
     }
   `);
-
-  console.log(data)
   return (
     <main className={container}>
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
