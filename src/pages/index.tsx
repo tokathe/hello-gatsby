@@ -1,8 +1,8 @@
 import { StaticImage } from "gatsby-plugin-image";
-import * as React from "react";
+import React,{Component} from "react";
 import Layout from "../components/layout";
 
-export default class IndexPage extends React.Component {
+export default class IndexPage extends Component {
 
   render() {
     return (

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { FunctionComponent} from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import {
   container,
@@ -9,7 +9,7 @@ import {
   siteTitle
 } from "./layout.module.css";
 
-const Layout: React.FC<{pageTitle: string}> = ({ pageTitle, children }) => {
+const Layout: FunctionComponent<{pageTitle: string}> = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query MyQuery {
       site(siteMetadata: {}) {

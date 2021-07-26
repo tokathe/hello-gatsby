@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { Component } from "react"
 import { Link } from "gatsby"
 
 // styles
@@ -24,7 +24,7 @@ const codeStyles = {
   borderRadius: 4,
 }
 
-export default class NotFoundPage extends React.Component {
+export default class NotFoundPage extends Component {
   render() {
     return (
       <main style={pageStyles}>

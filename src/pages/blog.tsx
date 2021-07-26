@@ -1,5 +1,5 @@
 import { graphql, PageProps } from "gatsby";
-import * as React from "react";
+import React, { Component } from "react";
 import Layout from "../components/layout";
 
 interface BlogHeroImage {
@@ -46,7 +46,7 @@ export const query = graphql`
   }
 `;
 
-export default class BlogPage extends React.Component<BlogPageProps> {
+export default class BlogPage extends Component<BlogPageProps> {
 
   render() {
     return (

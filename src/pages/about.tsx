@@ -1,7 +1,7 @@
-import * as React from "react";
+import React, { Component } from "react";
 import Layout from "../components/layout";
 
-export default class AboutPage extends React.Component {
+export default class AboutPage extends Component {
   render() {
     return (
       <Layout pageTitle="About Me">
